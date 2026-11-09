@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1790323750623" org.eventb.texttools.text_representation="context M3_Conditions_Context extends M2_Database_Context&#10;&#10;sets&#10;&#9;QUERY_CONDITIONS&#10;&#9;METADATAS&#10;&#10;constants&#10;&#9;allow_conds_operators&#10;&#9;fn_query_conds_col&#10;&#9;fn_query_conds_val&#10;&#9;fn_query_conds_op&#10;&#10;&#9;mapper_conditions_dangerous_fragment&#10;&#10;axioms&#10;  @amx_allow_operator; allow_conds_operators ⊆ OPERATOR&#10;  @axm_cond_col; fn_query_conds_col ∈ QUERY_CONDITIONS → (NAMESPACE × ENTITY × ATTRIBUTE)&#10;  @axm_cond_val; fn_query_conds_val ∈ QUERY_CONDITIONS → METADATAS&#10;  @axm_cond_op; fn_query_conds_op ∈ QUERY_CONDITIONS → OPERATOR&#10;  @axm_mapper_conditions_dangerous_fragment; mapper_conditions_dangerous_fragment ∈ METADATAS ↔ DANGEROUS_FRAGMENT&#10;end&#10;" version="3">
+    <org.eventb.core.extendsContext name="_gQsTQDAREfGpDsLhkA56BQ" org.eventb.core.target="M2_Database_Context"/>
+    <org.eventb.core.axiom name="_3vYRICeTEfGpr-k7h9NnKw" org.eventb.core.generated="false" org.eventb.core.label="amx_allow_operator;" org.eventb.core.predicate="allow_conds_operators ⊆ OPERATOR"/>
+    <org.eventb.core.carrierSet name="_Qb8SIC6SEfGgcsboj_ro7A" org.eventb.core.generated="false" org.eventb.core.identifier="QUERY_CONDITIONS"/>
+    <org.eventb.core.axiom name="_VFOtUCjzEfGE6s4D4Ed5SQ" org.eventb.core.generated="false" org.eventb.core.label="axm_cond_col;" org.eventb.core.predicate="fn_query_conds_col ∈ QUERY_CONDITIONS → (NAMESPACE × ENTITY × ATTRIBUTE)"/>
+    <org.eventb.core.axiom name="_FIElsCj2EfG-jdjuvxgN-w" org.eventb.core.generated="false" org.eventb.core.label="axm_cond_val;" org.eventb.core.predicate="fn_query_conds_val ∈ QUERY_CONDITIONS → METADATAS"/>
+    <org.eventb.core.axiom name="_VFOtUSjzEfGE6s4D4Ed5SQ" org.eventb.core.generated="false" org.eventb.core.label="axm_cond_op;" org.eventb.core.predicate="fn_query_conds_op ∈ QUERY_CONDITIONS → OPERATOR"/>
+    <org.eventb.core.constant name="_qRkEAC3cEfGuwaioRYFjWA" org.eventb.core.generated="false" org.eventb.core.identifier="allow_conds_operators"/>
+    <org.eventb.core.constant name="_iDqOcC3cEfGuwaioRYFjWA" org.eventb.core.generated="false" org.eventb.core.identifier="fn_query_conds_col"/>
+    <org.eventb.core.constant name="_iDrckC3cEfGuwaioRYFjWA" org.eventb.core.generated="false" org.eventb.core.identifier="fn_query_conds_val"/>
+    <org.eventb.core.constant name="_iDsDoC3cEfGuwaioRYFjWA" org.eventb.core.generated="false" org.eventb.core.identifier="fn_query_conds_op"/>
+    <org.eventb.core.constant name="__uU2ET57EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="mapper_conditions_dangerous_fragment"/>
+    <org.eventb.core.axiom name="__uU2Ej57EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="axm_mapper_conditions_dangerous_fragment;" org.eventb.core.predicate="mapper_conditions_dangerous_fragment ∈ METADATAS ↔ DANGEROUS_FRAGMENT"/>
+    <org.eventb.core.carrierSet name="_MEfhED72EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="METADATAS"/>
+</org.eventb.core.contextFile>

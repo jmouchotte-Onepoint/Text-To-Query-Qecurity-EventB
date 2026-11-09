@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+title: >-
+  Verify the Query: Engine-Agnostic Event-B Proofs for Text-to-Query
+  Security with Data-Centric Access Control — Event-B model
+message: >-
+  If you use this model or its proofs, please cite the accompanying
+  manuscript (see preferred-citation).
+type: software
+authors:
+  - given-names: Jean
+    family-names: Mouchotte
+    email: j.mouchotte@groupeonepoint.com
+    orcid: 'https://orcid.org/0000-0003-2149-5367'
+    affiliation: Onepoint, Rennes, France
+  - given-names: Lazhar
+    family-names: Hamel
+    email: lazhar.hamel@efrei.fr
+    affiliation: Efrei Research Lab, Paris Panthéon-Assas University, France
+  - given-names: Layth
+    family-names: Sliman
+    email: layth.sliman@efrei.com
+    affiliation: Efrei Research Lab, Paris Panthéon-Assas University, France
+repository-code: >-
+  https://github.com/jmouchotte-Onepoint/Text-To-Query-Qecurity-EventB
+abstract: >-
+  Event-B formal model verifying, before execution, that a dynamically
+  built query is structurally consistent, secure, and authorized for the
+  requesting user and the current data context. Six machines (M1-M6)
+  introduce structural, security, and data-centric authorization
+  requirements progressively; authorization is derived at each execution
+  from data metadata, user attributes, and execution context. All 137
+  proof obligations are discharged in Rodin. The model is agnostic to the
+  query generator and is instantiated on relational and non-relational
+  engines (SQL, MongoDB, Cassandra).
+keywords:
+  - formal methods
+  - Event-B
+  - Rodin
+  - query validation
+  - data security
+  - access control
+  - text-to-query
+  - database systems
+preferred-citation:
+  type: article
+  title: >-
+    Verify the Query: Engine-Agnostic Event-B Proofs for Text-to-Query
+    Security with Data-Centric Access Control
+  authors:
+    - given-names: Jean
+      family-names: Mouchotte
+      email: j.mouchotte@groupeonepoint.com
+      orcid: 'https://orcid.org/0000-0003-2149-5367'
+      affiliation: Onepoint, Rennes, France
+    - given-names: Lazhar
+      family-names: Hamel
+      affiliation: Efrei Research Lab, Paris Panthéon-Assas University, France
+    - given-names: Layth
+      family-names: Sliman
+      affiliation: Efrei Research Lab, Paris Panthéon-Assas University, France
+  journal: Journal of Computer Languages
+  year: 2026
+  status: submitted

@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="grd_fn_datas_to_metadatas;/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="d" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="DATAS,METADATAS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(OPERATOR,{LIKE},{BETWEEN},{IN},{EQ}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(JOIN_TYPE,{LEFT},{RIGHT},{INNER}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19,p20,p21,p22"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p19,p20,p21,p22"/>
+                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(INSTRUCTIONS,{SELECT},{INSERT}))" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24,p25"/>
+                                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p24,p25"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DANGEROUS_FRAGMENT,{OR11},{CHAR}))" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27,p28"/>
+                                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p27,p28"/>
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="p31" org.eventb.core.prInfHyps="p30"/>
+                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p30"/>
+                                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p34"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p31"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p35"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p36"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p37"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p38"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p39"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p40"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p41"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p42"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p43"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p44"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p45"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p46"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p47"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p48"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE16" org.eventb.core.prHyps="p49"/>
+                                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees d)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p50">
+                                                                                <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+                                                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p50" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p52" org.eventb.core.prHyps="p51">
+                                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p52" org.eventb.core.prHyps="">
+                                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p53">
+                                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p53" org.eventb.core.prHyps="p3">
+                                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+                                                                                                        <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p51"/>
+                                                                                                    </org.eventb.core.prAnte>
+                                                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                                                </org.eventb.core.prRule>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p54">
+                                                                                                <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p54" org.eventb.core.prHyps="p3"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p55">
+                                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p55" org.eventb.core.prHyps="p4">
+                                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+                                                                                                        <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p51"/>
+                                                                                                    </org.eventb.core.prAnte>
+                                                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                                                </org.eventb.core.prRule>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p56">
+                                                                                                <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p56" org.eventb.core.prHyps="p4"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p57">
+                                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="p1">
+                                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+                                                                                                        <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p51"/>
+                                                                                                    </org.eventb.core.prAnte>
+                                                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                                                </org.eventb.core.prRule>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p58">
+                                                                                                <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p58" org.eventb.core.prHyps="p1"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="-" org.eventb.core.prGoal="p59">
+                                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="p2">
+                                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+                                                                                                        <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="p51"/>
+                                                                                                    </org.eventb.core.prAnte>
+                                                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                                                </org.eventb.core.prRule>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="." org.eventb.core.prGoal="p60">
+                                                                                                <org.eventb.core.prRule name="r9" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="p2"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                        </org.eventb.core.prRule>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="set_allowed_data" org.eventb.core.type="ℙ(DATAS)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬BETWEEN=IN">
+            <org.eventb.core.prIdent name="BETWEEN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="IN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p43" org.eventb.core.predicate="query_structure⊆SCHEMA × TABLE × COLUMN">
+            <org.eventb.core.prIdent name="COLUMN" org.eventb.core.type="ℙ(COLUMN)"/>
+            <org.eventb.core.prIdent name="SCHEMA" org.eventb.core.type="ℙ(SCHEMA)"/>
+            <org.eventb.core.prIdent name="TABLE" org.eventb.core.type="ℙ(TABLE)"/>
+            <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(SCHEMA×TABLE×COLUMN)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬RIGHT=INNER">
+            <org.eventb.core.prIdent name="INNER" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="RIGHT" org.eventb.core.type="JOIN_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬OR11=CHAR">
+            <org.eventb.core.prIdent name="CHAR" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="OR11" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p52" org.eventb.core.predicate="d∈dom(fn_datas_metadatas)∧fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="safe_structure⊆SCHEMA × TABLE × COLUMN">
+            <org.eventb.core.prIdent name="COLUMN" org.eventb.core.type="ℙ(COLUMN)"/>
+            <org.eventb.core.prIdent name="SCHEMA" org.eventb.core.type="ℙ(SCHEMA)"/>
+            <org.eventb.core.prIdent name="TABLE" org.eventb.core.type="ℙ(TABLE)"/>
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(SCHEMA×TABLE×COLUMN)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀d⦂DATAS·d∈set_allowed_data⇒d∈dom(fn_datas_metadatas)∧fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬LEFT=INNER">
+            <org.eventb.core.prIdent name="INNER" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="LEFT" org.eventb.core.type="JOIN_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p47" org.eventb.core.predicate="allow_joins_types⊆JOIN_TYPE">
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="allow_joins_types" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬LIKE=IN">
+            <org.eventb.core.prIdent name="IN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="LIKE" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p59" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_auth_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬LIKE=EQ">
+            <org.eventb.core.prIdent name="EQ" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="LIKE" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="allowed_columns⊆COLUMN">
+            <org.eventb.core.prIdent name="COLUMN" org.eventb.core.type="ℙ(COLUMN)"/>
+            <org.eventb.core.prIdent name="allowed_columns" org.eventb.core.type="ℙ(COLUMN)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p44" org.eventb.core.predicate="allow_conds_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_conds_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬LEFT=RIGHT">
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="LEFT" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="RIGHT" org.eventb.core.type="JOIN_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬LIKE=BETWEEN">
+            <org.eventb.core.prIdent name="BETWEEN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="LIKE" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="fn_datas_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="JOIN_TYPE={LEFT,RIGHT,INNER}">
+            <org.eventb.core.prIdent name="INNER" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="LEFT" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="RIGHT" org.eventb.core.type="JOIN_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p48" org.eventb.core.predicate="mapper_metadata_dpatterns∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_metadata_dpatterns" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="INSTRUCTIONS={SELECT,INSERT}">
+            <org.eventb.core.prIdent name="INSERT" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="SELECT" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(OPERATOR,{LIKE},{BETWEEN},{IN},{EQ})">
+            <org.eventb.core.prIdent name="BETWEEN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="EQ" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="IN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="LIKE" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p55" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p53" org.eventb.core.predicate="d∈dom(fn_datas_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬BETWEEN=EQ">
+            <org.eventb.core.prIdent name="BETWEEN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="EQ" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p51" org.eventb.core.predicate="d∈set_allowed_data">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬SELECT=INSERT">
+            <org.eventb.core.prIdent name="INSERT" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="SELECT" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p46" org.eventb.core.predicate="allow_joins_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_joins_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p56" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p60" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="allowed_schemas⊆SCHEMA">
+            <org.eventb.core.prIdent name="SCHEMA" org.eventb.core.type="ℙ(SCHEMA)"/>
+            <org.eventb.core.prIdent name="allowed_schemas" org.eventb.core.type="ℙ(SCHEMA)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="partition(INSTRUCTIONS,{SELECT},{INSERT})">
+            <org.eventb.core.prIdent name="INSERT" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="SELECT" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬IN=EQ">
+            <org.eventb.core.prIdent name="EQ" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="IN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p45" org.eventb.core.predicate="mapper_conditions_dangerous_fragment∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_conditions_dangerous_fragment" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="partition(DANGEROUS_FRAGMENT,{OR11},{CHAR})">
+            <org.eventb.core.prIdent name="CHAR" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="OR11" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p50" org.eventb.core.predicate="d∈set_allowed_data⇒d∈dom(fn_datas_metadatas)∧fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="DANGEROUS_FRAGMENT={OR11,CHAR}">
+            <org.eventb.core.prIdent name="CHAR" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="OR11" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="OPERATOR={LIKE,BETWEEN,IN,EQ}">
+            <org.eventb.core.prIdent name="BETWEEN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="EQ" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="IN" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="LIKE" org.eventb.core.type="OPERATOR"/>
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p49" org.eventb.core.predicate="set_allowed_data⊆DATAS"/>
+        <org.eventb.core.prPred name="p54" org.eventb.core.predicate="fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="partition(JOIN_TYPE,{LEFT},{RIGHT},{INNER})">
+            <org.eventb.core.prIdent name="INNER" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="JOIN_TYPE" org.eventb.core.type="ℙ(JOIN_TYPE)"/>
+            <org.eventb.core.prIdent name="LEFT" org.eventb.core.type="JOIN_TYPE"/>
+            <org.eventb.core.prIdent name="RIGHT" org.eventb.core.type="JOIN_TYPE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT∧null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="allowed_tables⊆TABLE">
+            <org.eventb.core.prIdent name="TABLE" org.eventb.core.type="ℙ(TABLE)"/>
+            <org.eventb.core.prIdent name="allowed_tables" org.eventb.core.type="ℙ(TABLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="set_allowed_data"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r9" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="grd_fn_datas_metadatas_empty;/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="d" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17" org.eventb.core.prSets="ATTRIBUTE,AUTHORIZATIONS,DATAS,ENTITY,INSTRUCTIONS,LINK_TYPE,METADATAS,NAMESPACE,OPERATOR,QUERY_CONDITIONS,QUERY_LINKS,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19,p20,p21"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p18,p19,p20,p21"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p25"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p26"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p27"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p28"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p29"/>
+                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p30"/>
+                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p31"/>
+                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p32"/>
+                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p33"/>
+                                <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p34"/>
+                                <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p35"/>
+                                <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p36"/>
+                                <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p37"/>
+                                <org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p38"/>
+                                <org.eventb.core.prHypAction name="HIDE16" org.eventb.core.prHyps="p39"/>
+                                <org.eventb.core.prHypAction name="HIDE17" org.eventb.core.prHyps="p40"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees d)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+                                        <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p42">
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="p6,p9,p14,p1,p8,p2,p10,p12,p5,p3,p16,p17,p7,p4,p13,p18,p19,p20,p21,p22,p42">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p45">
+                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="p17"/>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p46">
+                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="p6,p9,p14,p1,p8,p2,p10,p12,p5,p3,p16,p17,p7,p4,p13,p18,p19,p20,p21,p22,p42">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p47">
+                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p47" org.eventb.core.prHyps="p7"/>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p48">
+                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p48" org.eventb.core.prHyps="p6,p9,p14,p1,p8,p2,p10,p12,p5,p3,p16,p17,p7,p4,p13,p18,p19,p20,p21,p22,p42">
+                                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p49">
+                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p49" org.eventb.core.prHyps="p4"/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        <org.eventb.core.prIdent name="fn_auth_scope" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(NAMESPACE×ENTITY×ATTRIBUTE×INSTRUCTIONS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_origin" org.eventb.core.type="ℙ(DATAS×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="fn_query_conds_col" org.eventb.core.type="ℙ(QUERY_CONDITIONS×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="fn_query_conds_op" org.eventb.core.type="ℙ(QUERY_CONDITIONS×OPERATOR)"/>
+        <org.eventb.core.prIdent name="fn_query_conds_val" org.eventb.core.type="ℙ(QUERY_CONDITIONS×METADATAS)"/>
+        <org.eventb.core.prIdent name="fn_query_link_left" org.eventb.core.type="ℙ(QUERY_LINKS×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="fn_query_link_op" org.eventb.core.type="ℙ(QUERY_LINKS×OPERATOR)"/>
+        <org.eventb.core.prIdent name="fn_query_link_right" org.eventb.core.type="ℙ(QUERY_LINKS×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="fn_query_link_type" org.eventb.core.type="ℙ(QUERY_LINKS×LINK_TYPE)"/>
+        <org.eventb.core.prIdent name="fn_safe_links" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="query_links" org.eventb.core.type="ℙ(QUERY_LINKS)"/>
+        <org.eventb.core.prIdent name="set_allowed_data" org.eventb.core.type="ℙ(DATAS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="fn_safe_links⊆allowed_namespaces × allowed_entities × allowed_attributes × (allowed_namespaces × allowed_entities × allowed_attributes)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p47" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="fn_query_conds_val∈QUERY_CONDITIONS → METADATAS"/>
+        <org.eventb.core.prPred name="p48" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_auth_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="allow_conds_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="allow_conds_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="d∈dom(fn_datas_metadatas)⇒d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="fn_datas_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="mapper_metadata_dpatterns∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_metadata_dpatterns" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="allowed_entities⊆ENTITY"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p44" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="d∈dom(fn_datas_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="fn_auth_scope∈AUTHORIZATIONS → ℙ(allowed_namespaces × allowed_entities × allowed_attributes × allowed_query_type)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="fn_query_conds_col∈QUERY_CONDITIONS → NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="fn_query_link_type∈query_links → LINK_TYPE"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="allow_link_types⊆LINK_TYPE">
+            <org.eventb.core.prIdent name="allow_link_types" org.eventb.core.type="ℙ(LINK_TYPE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="fn_query_link_right∈query_links → NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="fn_query_link_op∈query_links → OPERATOR"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="query_links⊆QUERY_LINKS"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p43" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_user_metadatas)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p45" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p49" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p46" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="mapper_conditions_dangerous_fragment∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_conditions_dangerous_fragment" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="allow_link_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="allow_link_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="fn_query_conds_op∈QUERY_CONDITIONS → OPERATOR"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="fn_datas_origin∈set_allowed_data → allowed_namespaces × allowed_entities × allowed_attributes"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="set_allowed_data⊆DATAS"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="fn_query_link_left∈query_links → NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀d⦂DATAS·d∈set_allowed_data⇒fn_datas_metadatas(d)=fn_datas_metadatas_to_user_metadatas(d)∪fn_datas_metadatas_to_cond_metadatas(d)∪fn_datas_metadatas_to_auth_metadatas(d)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="grd_fn_auth_metadatas;/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="r" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="AUTHORIZATIONS,METADATAS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p18"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p19"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p20"/>
+                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p21"/>
+                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p22"/>
+                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p23"/>
+                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p25"/>
+                                <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p26"/>
+                                <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p27"/>
+                                <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p28"/>
+                                <org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p29"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees r)" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33">
+                                                        <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="p2">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps=""/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p36">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="p2"/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p37">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees r)" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+                                                        <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="p4">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps=""/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p39">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps="p4"/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p40">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees r)" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+                                                        <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="p3">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps=""/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p42">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p3"/>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="-" org.eventb.core.prGoal="p43">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees r)" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+                                                        <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="p1">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps=""/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                            <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="." org.eventb.core.prGoal="p45">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="p1"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="fn_auth_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_data_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))∪(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))=(∅ ⦂ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈AUTHORIZATIONS⇒r∈dom(fn_auth_metadatas)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_data_metadatas)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="allow_joins_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_joins_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p45" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="allow_conds_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_conds_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="mapper_conditions_dangerous_fragment∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_conditions_dangerous_fragment" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="r∈AUTHORIZATIONS">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="mapper_metadata_dpatterns∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_metadata_dpatterns" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p44" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_data_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="allowed_entities⊆ENTITY">
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="(∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas))∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_user_metadatas))∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_cond_metadatas))∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_data_metadatas))∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_user_metadatas)"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="r∈dom(fn_auth_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_cond_metadatas)"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE">
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·⊤⇒r∈dom(fn_auth_metadatas)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_data_metadatas)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="set_allowed_data⊆DATAS">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="set_allowed_data" org.eventb.core.type="ℙ(DATAS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas_to_data_metadatas)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="fn_auth_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="AUTHORIZATIONS"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="grd_fn_auth_metadatas_empty;/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="r" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="AUTHORIZATIONS,METADATAS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p17"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p18"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p19"/>
+                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p20"/>
+                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p21"/>
+                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p22"/>
+                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p23"/>
+                                <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p25"/>
+                                <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p26"/>
+                                <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p27"/>
+                                <org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p28"/>
+                                <org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees r)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="p33">
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="p3">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps=""/>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p38">
+                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="p3"/>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p39">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps="p2">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps=""/>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p40">
+                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="p2"/>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p41">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="p1">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+                                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p37" org.eventb.core.prHyps=""/>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p42">
+                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p1"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="fn_auth_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_data_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))∪(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))=(∅ ⦂ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas)⇒r∈dom(fn_auth_metadatas_to_user_metadatas)∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_data_metadatas)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="allow_joins_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_joins_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_user_metadatas)∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_data_metadatas)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·⊤⇒fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+            <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="allow_conds_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_conds_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="mapper_conditions_dangerous_fragment∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_conditions_dangerous_fragment" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="r∈AUTHORIZATIONS">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="mapper_metadata_dpatterns∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_metadata_dpatterns" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="ATTRIBUTE" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_data_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="allowed_entities⊆ENTITY">
+            <org.eventb.core.prIdent name="ENTITY" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="r∈dom(fn_auth_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE">
+            <org.eventb.core.prIdent name="NAMESPACE" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈AUTHORIZATIONS⇒fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="set_allowed_data⊆DATAS">
+            <org.eventb.core.prIdent name="DATAS" org.eventb.core.type="ℙ(DATAS)"/>
+            <org.eventb.core.prIdent name="set_allowed_data" org.eventb.core.type="ℙ(DATAS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="r∈dom(fn_auth_metadatas)⇒r∈dom(fn_auth_metadatas_to_user_metadatas)∧fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧r∈dom(fn_auth_metadatas_to_data_metadatas)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="AUTHORIZATIONS"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="def_can_access;/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="r,d,u" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="ATTRIBUTE,AUTHORIZATIONS,DATAS,ENTITY,INSTRUCTIONS,METADATAS,NAMESPACE,QUERY_CONDITIONS,USERS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14,p15,p16"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13,p14,p15,p16"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p21" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p42">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p24"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p25"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p26"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p27"/>
+                                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p28"/>
+                                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p29"/>
+                                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p30"/>
+                                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p31"/>
+                                <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p32"/>
+                                <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p33"/>
+                                <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p34"/>
+                                <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p35"/>
+                                <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p36"/>
+                                <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p37"/>
+                                <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p38"/>
+                                <org.eventb.core.prHypAction name="HIDE15" org.eventb.core.prHyps="p39"/>
+                                <org.eventb.core.prHypAction name="REWRITE16" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees u,d,r)" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p45">
+                                                <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+                                                <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+                                                <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56">
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p58">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p58" org.eventb.core.prHyps="p3"/>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p59">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="p8"/>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p60">
+                                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p61">
+                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="p9"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p64">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="p10"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p65">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="p11"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p66">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="p1"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p67">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p67" org.eventb.core.prHyps="p6"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name="," org.eventb.core.prGoal="p68">
+                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p68" org.eventb.core.prHyps="p4"/>
+                                                                            </org.eventb.core.prAnte>
+                                                                            <org.eventb.core.prAnte name="-" org.eventb.core.prGoal="p69">
+                                                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p69" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="p70">
+                                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p71" org.eventb.core.prHyps="">
+                                                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p72">
+                                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p72" org.eventb.core.prHyps="p7"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p73">
+                                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p73" org.eventb.core.prHyps="p5"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p74">
+                                                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p74" org.eventb.core.prHyps="p2"/>
+                                                                                            </org.eventb.core.prAnte>
+                                                                                        </org.eventb.core.prRule>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_data_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_auth_scope" org.eventb.core.type="ℙ(AUTHORIZATIONS×ℙ(NAMESPACE×ENTITY×ATTRIBUTE×INSTRUCTIONS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_auth_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_cond_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_metadatas_to_user_metadatas" org.eventb.core.type="ℙ(DATAS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="fn_datas_origin" org.eventb.core.type="ℙ(DATAS×(NAMESPACE×ENTITY×ATTRIBUTE))"/>
+        <org.eventb.core.prIdent name="fn_query_conds_val" org.eventb.core.type="ℙ(QUERY_CONDITIONS×METADATAS)"/>
+        <org.eventb.core.prIdent name="fn_query_user_metadatas" org.eventb.core.type="ℙ(USERS×ℙ(METADATAS))"/>
+        <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        <org.eventb.core.prIdent name="set_allowed_data" org.eventb.core.type="ℙ(DATAS)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))∪(fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d))=(∅ ⦂ ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p71" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀u⦂USERS,d⦂DATAS,r⦂AUTHORIZATIONS·r∈dom(fn_auth_scope)∧r∈dom(fn_auth_metadatas)∧u∈dom(fn_query_user_metadatas)∧d∈dom(fn_datas_origin)∧d∈dom(fn_datas_metadatas)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧r∈dom(fn_auth_metadatas_to_data_metadatas)⇒fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)))"/>
+        <org.eventb.core.prPred name="p73" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)))">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·⊤⇒fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p74" org.eventb.core.predicate="fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p66" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p61" org.eventb.core.predicate="fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p53" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_auth_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="allow_conds_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_conds_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p46" org.eventb.core.predicate="r∈dom(fn_auth_scope)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="fn_datas_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="mapper_metadata_dpatterns∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_metadata_dpatterns" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p56" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_data_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="allowed_entities⊆ENTITY"/>
+        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀u⦂USERS,d⦂DATAS·⊤∧⊤⇒(∀r⦂AUTHORIZATIONS·⊤∧r∈dom(fn_auth_scope)∧r∈dom(fn_auth_metadatas)∧u∈dom(fn_query_user_metadatas)∧d∈dom(fn_datas_origin)∧d∈dom(fn_datas_metadatas)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧r∈dom(fn_auth_metadatas_to_data_metadatas)⇒fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS))))"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p47" org.eventb.core.predicate="r∈dom(fn_auth_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas)⇒fn_auth_metadatas_to_user_metadatas(r)∩fn_auth_metadatas_to_cond_metadatas(r)=(∅ ⦂ ℙ(METADATAS))∧fn_auth_metadatas_to_user_metadatas(r)∩fn_auth_metadatas_to_data_metadatas(r)=(∅ ⦂ ℙ(METADATAS))∧fn_auth_metadatas_to_data_metadatas(r)∩fn_auth_metadatas_to_cond_metadatas(r)=(∅ ⦂ ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p51" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p50" org.eventb.core.predicate="d∈dom(fn_datas_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="fn_auth_scope∈AUTHORIZATIONS → ℙ(allowed_namespaces × allowed_entities × allowed_attributes × allowed_query_type)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀u⦂USERS,d⦂DATAS·u∈USERS∧d∈DATAS⇒(∀r⦂AUTHORIZATIONS·r∈AUTHORIZATIONS∧r∈dom(fn_auth_scope)∧r∈dom(fn_auth_metadatas)∧u∈dom(fn_query_user_metadatas)∧d∈dom(fn_datas_origin)∧d∈dom(fn_datas_metadatas)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧r∈dom(fn_auth_metadatas_to_data_metadatas)⇒fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩fn_query_conds_val[QUERY_CONDITIONS])∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS))))"/>
+        <org.eventb.core.prPred name="p49" org.eventb.core.predicate="d∈dom(fn_datas_origin)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p60" org.eventb.core.predicate="fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p70" org.eventb.core.predicate="fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="fn_query_user_metadatas∈USERS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="allow_joins_operators⊆OPERATOR">
+            <org.eventb.core.prIdent name="OPERATOR" org.eventb.core.type="ℙ(OPERATOR)"/>
+            <org.eventb.core.prIdent name="allow_joins_operators" org.eventb.core.type="ℙ(OPERATOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p64" org.eventb.core.predicate="fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p67" org.eventb.core.predicate="fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p65" org.eventb.core.predicate="fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p55" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="fn_datas_metadatas_to_cond_metadatas∈set_allowed_data → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p52" org.eventb.core.predicate="d∈dom(fn_datas_metadatas_to_cond_metadatas)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="∀d⦂DATAS·d∈dom(fn_datas_metadatas)⇒fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_user_metadatas(d)∩fn_datas_metadatas_to_auth_metadatas(d)=(∅ ⦂ ℙ(METADATAS))∧fn_datas_metadatas_to_auth_metadatas(d)∩fn_datas_metadatas_to_cond_metadatas(d)=(∅ ⦂ ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="query_type∈INSTRUCTIONS"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀u⦂USERS,d⦂DATAS·u∈USERS∧d∈DATAS⇒(∀r⦂AUTHORIZATIONS·r∈AUTHORIZATIONS∧r∈dom(fn_auth_scope)∧r∈dom(fn_auth_metadatas)∧u∈dom(fn_query_user_metadatas)∧d∈dom(fn_datas_origin)∧d∈dom(fn_datas_metadatas)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧r∈dom(fn_auth_metadatas_to_data_metadatas)⇒fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS))))"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="mapper_conditions_dangerous_fragment∈METADATAS ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_conditions_dangerous_fragment" org.eventb.core.type="ℙ(METADATAS×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p48" org.eventb.core.predicate="u∈dom(fn_query_user_metadatas)">
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈dom(fn_auth_metadatas)⇒(fn_auth_metadatas_to_user_metadatas(r)∩fn_auth_metadatas_to_cond_metadatas(r))∪(fn_auth_metadatas_to_user_metadatas(r)∩fn_auth_metadatas_to_data_metadatas(r))∪(fn_auth_metadatas_to_data_metadatas(r)∩fn_auth_metadatas_to_cond_metadatas(r))=(∅ ⦂ ℙ(METADATAS))"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p72" org.eventb.core.predicate="fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p45" org.eventb.core.predicate="r∈dom(fn_auth_scope)∧r∈dom(fn_auth_metadatas)∧u∈dom(fn_query_user_metadatas)∧d∈dom(fn_datas_origin)∧d∈dom(fn_datas_metadatas)∧d∈dom(fn_datas_metadatas_to_user_metadatas)∧d∈dom(fn_datas_metadatas_to_cond_metadatas)∧d∈dom(fn_datas_metadatas_to_auth_metadatas)∧r∈dom(fn_auth_metadatas_to_user_metadatas)∧r∈dom(fn_auth_metadatas_to_cond_metadatas)∧r∈dom(fn_auth_metadatas_to_data_metadatas)⇒fn_datas_origin∈DATAS ⇸ NAMESPACE × ENTITY × ATTRIBUTE∧fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)∧(fn_datas_origin(d) ↦ query_type∈fn_auth_scope(r)⇒fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)))">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="fn_datas_origin∈set_allowed_data → allowed_namespaces × allowed_entities × allowed_attributes"/>
+        <org.eventb.core.prPred name="p68" org.eventb.core.predicate="fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂AUTHORIZATIONS·r∈AUTHORIZATIONS⇒fn_auth_metadatas(r)=fn_auth_metadatas_to_user_metadatas(r)∪fn_auth_metadatas_to_cond_metadatas(r)∪fn_auth_metadatas_to_data_metadatas(r)"/>
+        <org.eventb.core.prPred name="p59" org.eventb.core.predicate="fn_auth_scope∈AUTHORIZATIONS ⇸ ℙ(NAMESPACE × ENTITY × ATTRIBUTE × INSTRUCTIONS)"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="set_allowed_data⊆DATAS"/>
+        <org.eventb.core.prPred name="p63" org.eventb.core.predicate="fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="fn_auth_metadatas∈AUTHORIZATIONS → ℙ(METADATAS)"/>
+        <org.eventb.core.prPred name="p54" org.eventb.core.predicate="r∈dom(fn_auth_metadatas_to_user_metadatas)">
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p62" org.eventb.core.predicate="fn_datas_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_user_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_query_user_metadatas∈USERS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_cond_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_datas_metadatas_to_auth_metadatas∈DATAS ⇸ ℙ(METADATAS)∧fn_auth_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧(fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS))">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p69" org.eventb.core.predicate="fn_datas_metadatas(d)⊆(fn_datas_metadatas_to_user_metadatas(d)∩fn_query_user_metadatas(u))∪(fn_datas_metadatas_to_cond_metadatas(d)∩ran(fn_query_conds_val))∪(fn_datas_metadatas_to_auth_metadatas(d)∩fn_auth_metadatas(r))⇒fn_auth_metadatas_to_user_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_cond_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)∧fn_auth_metadatas_to_data_metadatas∈AUTHORIZATIONS ⇸ ℙ(METADATAS)">
+            <org.eventb.core.prIdent name="d" org.eventb.core.type="DATAS"/>
+            <org.eventb.core.prIdent name="r" org.eventb.core.type="AUTHORIZATIONS"/>
+            <org.eventb.core.prIdent name="u" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

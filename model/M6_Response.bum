@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1790339646967" org.eventb.texttools.text_representation="machine M6_Response refines M5_Authorizations  sees M5_Authorizations_Context&#10;&#10;variables&#10;&#9;query_type_state&#10;&#9;current_qtype&#10;&#9;current_segments&#10;&#10;&#9;query_element_state&#10;&#9;current_element&#10;&#10;&#9;query_conditions_state&#10;&#9;current_conditions&#10;&#10;&#9;query_links_state&#10;&#9;current_links&#10;&#10;&#9;query_auth_state&#10;&#9;current_datas&#10;&#10;&#9;current_user&#10;&#9;current_qselected_datas&#10;&#9;can_access&#10;&#10;&#9;query_response&#10;&#10;invariants&#10;  @inv_state; query_response ∈ STATE&#10;&#10;&#10;  @inv_return_requires_valid; query_response = VALID ⇒ query_auth_state = VALID&#10;  @inv_block_requires_reject; query_response = REJECTED ⇒&#10;              query_type_state = REJECTED&#10;            ∨ query_element_state = REJECTED&#10;            ∨ query_conditions_state = REJECTED&#10;            ∨ query_links_state = REJECTED&#10;            ∨ query_auth_state = REJECTED&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @init_response; query_response ≔ PENDING&#10;  end&#10;&#10;  event ReturnUserData&#10;    where&#10;      @grd_auth_state; query_auth_state = VALID&#10;      @grd_response_state; query_response = PENDING&#10;    then&#10;      @act_return; query_response ≔ VALID&#10;  end&#10;&#10;  event BlockQuery&#10;    where&#10;      @grd_blocked; query_type_state = REJECTED&#10;                  ∨ query_element_state = REJECTED&#10;                  ∨ query_conditions_state = REJECTED&#10;                  ∨ query_links_state = REJECTED&#10;                  ∨ query_auth_state = REJECTED&#10;      @grd_response_state; query_response = PENDING&#10;    then&#10;      @act_block; query_response ≔ REJECTED&#10;  end&#10;&#10;  event ValidateData extends ValidateData&#10;  end&#10;&#10;  event AddData extends AddData&#10;  end&#10;&#10;  event RejectDataNotFound extends RejectDataNotFound&#10;  end&#10;&#10;  event RejectDataNotAllowed extends RejectDataNotAllowed&#10;  end&#10;&#10;  event RejectDataForbidden extends RejectDataForbidden&#10;  end&#10;&#10;  event ValidateLink extends ValidateLink&#10;  end&#10;&#10;  event AddLink extends AddLink&#10;  end&#10;&#10;  event RejectLinkNotSafe extends RejectLinkNotSafe&#10;  end&#10;&#10;  event RejectLinkOperator extends RejectLinkOperator&#10;  end&#10;&#10;  event RejectLinkType extends RejectLinkType&#10;  end&#10;&#10;  event RejectLinkElement extends RejectLinkElement&#10;  end&#10;&#10;  event ValidateConditions extends ValidateConditions&#10;  end&#10;&#10;  event AddCondition extends AddCondition&#10;  end&#10;&#10;  event RejectConditionValues extends RejectConditionValues&#10;  end&#10;&#10;  event RejectConditionOperator extends RejectConditionOperator&#10;  end&#10;&#10;  event RejectConditionElement extends RejectConditionElement&#10;  end&#10;&#10;  event ValidateStructure extends ValidateStructure&#10;  end&#10;&#10;  event AddElement extends AddElement&#10;  end&#10;&#10;  event RejectedNotAllowedElement extends RejectedNotAllowedElement&#10;  end&#10;&#10;  event RejectedNotSafeElement extends RejectedNotSafeElement&#10;  end&#10;&#10;  event ValidateQuery extends ValidateQuery&#10;  end&#10;&#10;  event RejectQueryType extends RejectQueryType&#10;  end&#10;&#10;  event RejectDangerousSegment extends RejectDangerousSegment&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="_MZHUwLjdEfG18-zCd9WN_w" org.eventb.core.target="M5_Authorizations"/>
+    <org.eventb.core.seesContext name="_MZHUwbjdEfG18-zCd9WN_w" org.eventb.core.target="M5_Authorizations_Context"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_MZHUwrjdEfG18-zCd9WN_w" org.eventb.core.assignment="query_response ≔ PENDING" org.eventb.core.generated="false" org.eventb.core.label="init_response;"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="_MZHUw7jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_type_state"/>
+    <org.eventb.core.variable name="_MZHUxLjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_qtype"/>
+    <org.eventb.core.variable name="_MZHUxbjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_segments"/>
+    <org.eventb.core.variable name="_MZHUxrjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_element_state"/>
+    <org.eventb.core.variable name="_MZH70LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_element"/>
+    <org.eventb.core.variable name="_MZH70bjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_conditions_state"/>
+    <org.eventb.core.variable name="_MZH70rjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_conditions"/>
+    <org.eventb.core.variable name="_MZH707jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_links_state"/>
+    <org.eventb.core.variable name="_MZH71LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_links"/>
+    <org.eventb.core.variable name="_MZH71bjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_auth_state"/>
+    <org.eventb.core.variable name="_MZH71rjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_datas"/>
+    <org.eventb.core.variable name="_MZH717jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_user"/>
+    <org.eventb.core.variable name="_MZH72LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="current_qselected_datas"/>
+    <org.eventb.core.variable name="_MZH72bjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="can_access"/>
+    <org.eventb.core.variable name="_MZH72rjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.identifier="query_response"/>
+    <org.eventb.core.invariant name="_MZH727jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="inv_state;" org.eventb.core.predicate="query_response ∈ STATE"/>
+    <org.eventb.core.invariant name="_MZIi4LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="inv_return_requires_valid;" org.eventb.core.predicate="query_response = VALID ⇒ query_auth_state = VALID"/>
+    <org.eventb.core.invariant name="_MZIi4bjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="inv_block_requires_reject;" org.eventb.core.predicate="query_response = REJECTED ⇒&#10;              query_type_state = REJECTED&#10;            ∨ query_element_state = REJECTED&#10;            ∨ query_conditions_state = REJECTED&#10;            ∨ query_links_state = REJECTED&#10;            ∨ query_auth_state = REJECTED"/>
+    <org.eventb.core.event name="_MZIi4rjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ReturnUserData">
+        <org.eventb.core.guard name="_MZIi47jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="grd_auth_state;" org.eventb.core.predicate="query_auth_state = VALID"/>
+        <org.eventb.core.guard name="_MZIi5LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="grd_response_state;" org.eventb.core.predicate="query_response = PENDING"/>
+        <org.eventb.core.action name="_MZIi5bjdEfG18-zCd9WN_w" org.eventb.core.assignment="query_response ≔ VALID" org.eventb.core.generated="false" org.eventb.core.label="act_return;"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZIi5rjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="BlockQuery">
+        <org.eventb.core.guard name="_MZIi57jdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="grd_blocked;" org.eventb.core.predicate="query_type_state = REJECTED&#10;                  ∨ query_element_state = REJECTED&#10;                  ∨ query_conditions_state = REJECTED&#10;                  ∨ query_links_state = REJECTED&#10;                  ∨ query_auth_state = REJECTED"/>
+        <org.eventb.core.guard name="_MZIi6LjdEfG18-zCd9WN_w" org.eventb.core.generated="false" org.eventb.core.label="grd_response_state;" org.eventb.core.predicate="query_response = PENDING"/>
+        <org.eventb.core.action name="_MZIi6bjdEfG18-zCd9WN_w" org.eventb.core.assignment="query_response ≔ REJECTED" org.eventb.core.generated="false" org.eventb.core.label="act_block;"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZIi6rjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ValidateData">
+        <org.eventb.core.refinesEvent name="_MZIi67jdEfG18-zCd9WN_w" org.eventb.core.target="ValidateData"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxALjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AddData">
+        <org.eventb.core.refinesEvent name="_MZJxAbjdEfG18-zCd9WN_w" org.eventb.core.target="AddData"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxArjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectDataNotFound">
+        <org.eventb.core.refinesEvent name="_MZJxA7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectDataNotFound"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxBLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectDataNotAllowed">
+        <org.eventb.core.refinesEvent name="_MZJxBbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectDataNotAllowed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxBrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectDataForbidden">
+        <org.eventb.core.refinesEvent name="_MZJxB7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectDataForbidden"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxCLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ValidateLink">
+        <org.eventb.core.refinesEvent name="_MZJxCbjdEfG18-zCd9WN_w" org.eventb.core.target="ValidateLink"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZJxCrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AddLink">
+        <org.eventb.core.refinesEvent name="_MZJxC7jdEfG18-zCd9WN_w" org.eventb.core.target="AddLink"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYELjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectLinkNotSafe">
+        <org.eventb.core.refinesEvent name="_MZKYEbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectLinkNotSafe"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYErjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectLinkOperator">
+        <org.eventb.core.refinesEvent name="_MZKYE7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectLinkOperator"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYFLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectLinkType">
+        <org.eventb.core.refinesEvent name="_MZKYFbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectLinkType"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYFrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectLinkElement">
+        <org.eventb.core.refinesEvent name="_MZKYF7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectLinkElement"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYGLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ValidateConditions">
+        <org.eventb.core.refinesEvent name="_MZKYGbjdEfG18-zCd9WN_w" org.eventb.core.target="ValidateConditions"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYGrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AddCondition">
+        <org.eventb.core.refinesEvent name="_MZKYG7jdEfG18-zCd9WN_w" org.eventb.core.target="AddCondition"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYHLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectConditionValues">
+        <org.eventb.core.refinesEvent name="_MZKYHbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectConditionValues"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYHrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectConditionOperator">
+        <org.eventb.core.refinesEvent name="_MZKYH7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectConditionOperator"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYILjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectConditionElement">
+        <org.eventb.core.refinesEvent name="_MZKYIbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectConditionElement"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYIrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ValidateStructure">
+        <org.eventb.core.refinesEvent name="_MZKYI7jdEfG18-zCd9WN_w" org.eventb.core.target="ValidateStructure"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYJLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AddElement">
+        <org.eventb.core.refinesEvent name="_MZKYJbjdEfG18-zCd9WN_w" org.eventb.core.target="AddElement"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYJrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectedNotAllowedElement">
+        <org.eventb.core.refinesEvent name="_MZKYJ7jdEfG18-zCd9WN_w" org.eventb.core.target="RejectedNotAllowedElement"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYKLjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectedNotSafeElement">
+        <org.eventb.core.refinesEvent name="_MZKYKbjdEfG18-zCd9WN_w" org.eventb.core.target="RejectedNotSafeElement"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZKYKrjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ValidateQuery">
+        <org.eventb.core.refinesEvent name="_MZK_ILjdEfG18-zCd9WN_w" org.eventb.core.target="ValidateQuery"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZK_IbjdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectQueryType">
+        <org.eventb.core.refinesEvent name="_MZK_IrjdEfG18-zCd9WN_w" org.eventb.core.target="RejectQueryType"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MZK_I7jdEfG18-zCd9WN_w" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RejectDangerousSegment">
+        <org.eventb.core.refinesEvent name="_MZK_JLjdEfG18-zCd9WN_w" org.eventb.core.target="RejectDangerousSegment"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

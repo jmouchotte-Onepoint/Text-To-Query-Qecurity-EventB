@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1790323749072" org.eventb.texttools.text_representation="context M2_Database_Context extends M1_Query_Context&#10;&#10;sets NAMESPACE ENTITY ATTRIBUTE&#10;&#10;constants&#10;&#9;allowed_namespaces&#10;&#9;allowed_entities&#10;&#9;allowed_attributes&#10;&#10;&#9;safe_structure&#10;&#9;query_structure&#10;&#10;axioms&#10;  @type1; allowed_namespaces ⊆ NAMESPACE&#10;  @type2; allowed_entities ⊆ ENTITY&#10;  @type3; allowed_attributes ⊆ ATTRIBUTE&#10;&#10;  @init_safe_structure; safe_structure ⊆ (NAMESPACE × ENTITY × ATTRIBUTE)&#10;  @query_structure; query_structure ⊆ (NAMESPACE × ENTITY × ATTRIBUTE)&#10;end" version="3">
+    <org.eventb.core.extendsContext name="_cnmssDAREfGpDsLhkA56BQ" org.eventb.core.target="M1_Query_Context"/>
+    <org.eventb.core.axiom name="_9wA9tSduEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.label="type1;" org.eventb.core.predicate="allowed_namespaces ⊆ NAMESPACE"/>
+    <org.eventb.core.axiom name="_9wBkwCduEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.label="type2;" org.eventb.core.predicate="allowed_entities ⊆ ENTITY"/>
+    <org.eventb.core.axiom name="_9wBkwSduEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.label="type3;" org.eventb.core.predicate="allowed_attributes ⊆ ATTRIBUTE"/>
+    <org.eventb.core.axiom name="_CJxKUD5nEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="init_safe_structure;" org.eventb.core.predicate="safe_structure ⊆ (NAMESPACE × ENTITY × ATTRIBUTE)"/>
+    <org.eventb.core.axiom name="_LkLrUC3JEfGAj-AjQUivTg" org.eventb.core.generated="false" org.eventb.core.label="query_structure;" org.eventb.core.predicate="query_structure ⊆ (NAMESPACE × ENTITY × ATTRIBUTE)"/>
+    <org.eventb.core.constant name="_YnzfALi4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="allowed_namespaces"/>
+    <org.eventb.core.constant name="_YnzfAbi4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="allowed_entities"/>
+    <org.eventb.core.constant name="_YnzfAri4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="allowed_attributes"/>
+    <org.eventb.core.constant name="_CJxKUT5nEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="safe_structure"/>
+    <org.eventb.core.constant name="_GgA1AD5rEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="query_structure"/>
+    <org.eventb.core.carrierSet name="_Yn0GELi4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="NAMESPACE"/>
+    <org.eventb.core.carrierSet name="_Yn0GEbi4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="ENTITY"/>
+    <org.eventb.core.carrierSet name="_Yn0GEri4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="ATTRIBUTE"/>
+</org.eventb.core.contextFile>

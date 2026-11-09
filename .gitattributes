@@ -1,0 +1,18 @@
+# Rodin stores every component as XML. Normalize line endings so the model is
+# byte-identical across Windows/macOS/Linux workspaces.
+*.bum   text eol=lf
+*.buc   text eol=lf
+*.bpr   text eol=lf
+*.bps   text eol=lf
+.project text eol=lf
+
+# Proof trees are machine-generated and very large. Keep them versioned (they
+# are not regenerable) but out of diffs, blame and language statistics.
+*.bpr   linguist-generated=true
+*.bps   linguist-generated=true
+*.bpr   -diff
+*.bps   -diff
+
+# The sources are Event-B, not "XML" — don't let XML dominate the language bar.
+*.bum   linguist-language=XML linguist-detectable=false
+*.buc   linguist-language=XML linguist-detectable=false

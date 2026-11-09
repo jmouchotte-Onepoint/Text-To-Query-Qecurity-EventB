@@ -1,0 +1,16 @@
+# --- Fichiers dérivés Rodin (régénérés par org.rodinp.core.rodinbuilder) ---
+# *.bcm : machine statiquement vérifiée (dérivée de *.bum)
+# *.bcc : contexte statiquement vérifié (dérivé de *.buc)
+# *.bpo : obligations de preuve générées
+*.bcm
+*.bcc
+*.bpo
+
+# --- Workspace Eclipse / Rodin ---
+.metadata/
+.settings/
+bin/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

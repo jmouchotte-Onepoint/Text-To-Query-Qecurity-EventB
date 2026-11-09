@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1790323746908" org.eventb.texttools.text_representation="context M1_Query_Context extends M0_Init_Context&#10;&#10;sets&#10;&#9;USERS&#10;&#9;QUERY_FRAGMENT&#10;&#10;constants&#10;&#9;allowed_query_type&#10;&#9;null_pattern&#10;&#10;&#9;query_user&#10;&#9;query_type&#10;&#9;query_segment&#10;&#10;&#9;mapper_query_dfragment&#10;&#10;axioms&#10;  @axm_qtype; allowed_query_type ⊆ INSTRUCTIONS&#10;  @axm_qtype_not_empty; allowed_query_type ≠ ∅&#10;  @axm_null_pattern_in_dangerous; null_pattern ∈ DANGEROUS_FRAGMENT&#10;  @axm_mapper_query_dfragment; mapper_query_dfragment ∈ QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT&#10;&#10;  @init_quser; query_user ∈ USERS&#10;  @axm_query_type; query_type ∈ INSTRUCTIONS&#10;  @axm_pattern; query_segment ⊆ QUERY_FRAGMENT&#10;end" version="3">
+    <org.eventb.core.extendsContext name="_biNK4DAREfGpDsLhkA56BQ" org.eventb.core.target="M0_Init_Context"/>
+    <org.eventb.core.axiom name="_zH4c0C5-EfG-B6bMZKlLxA" org.eventb.core.generated="false" org.eventb.core.label="axm_qtype;" org.eventb.core.predicate="allowed_query_type ⊆ INSTRUCTIONS"/>
+    <org.eventb.core.axiom name="_zH4c0S5-EfG-B6bMZKlLxA" org.eventb.core.generated="false" org.eventb.core.label="axm_qtype_not_empty;" org.eventb.core.predicate="allowed_query_type ≠ ∅"/>
+    <org.eventb.core.axiom name="_9ZMh0D5nEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="axm_null_pattern_in_dangerous;" org.eventb.core.predicate="null_pattern ∈ DANGEROUS_FRAGMENT"/>
+    <org.eventb.core.axiom name="_3aHZoD56EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="axm_mapper_query_dfragment;" org.eventb.core.predicate="mapper_query_dfragment ∈ QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT"/>
+    <org.eventb.core.axiom name="_zDtxMD5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="init_quser;" org.eventb.core.predicate="query_user ∈ USERS"/>
+    <org.eventb.core.axiom name="_cq_k8CdrEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.label="axm_query_type;" org.eventb.core.predicate="query_type ∈ INSTRUCTIONS"/>
+    <org.eventb.core.constant name="_TsxZsCkAEfGxYKonYDAW5g" org.eventb.core.generated="false" org.eventb.core.identifier="allowed_query_type"/>
+    <org.eventb.core.axiom name="_h4lNkSj_EfGxYKonYDAW5g" org.eventb.core.generated="false" org.eventb.core.label="axm_pattern;" org.eventb.core.predicate="query_segment ⊆ QUERY_FRAGMENT"/>
+    <org.eventb.core.constant name="_9ZNI4D5nEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="null_pattern"/>
+    <org.eventb.core.constant name="_zDuYQD5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="query_user"/>
+    <org.eventb.core.constant name="_T-Q8oC6CEfG-B6bMZKlLxA" org.eventb.core.generated="false" org.eventb.core.identifier="query_type"/>
+    <org.eventb.core.carrierSet name="_zDuYQT5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="USERS"/>
+    <org.eventb.core.constant name="_Q9NUAD5oEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="query_segment"/>
+    <org.eventb.core.carrierSet name="_3aIAsD56EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="QUERY_FRAGMENT"/>
+    <org.eventb.core.constant name="_3aIAsj56EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="mapper_query_dfragment"/>
+</org.eventb.core.contextFile>

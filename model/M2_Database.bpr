@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv_element;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NAMESPACE×ENTITY×ATTRIBUTE))⊆allowed_namespaces × allowed_entities × allowed_attributes"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv_safe;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀ns⦂NAMESPACE,en⦂ENTITY,at⦂ATTRIBUTE·ns ↦ en ↦ at∈(∅ ⦂ ℙ(NAMESPACE×ENTITY×ATTRIBUTE))⇒ns ↦ en ↦ at∈safe_structure∧ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AddElement/inv_element;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p10" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p1,p15,p17,p16">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+        <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="ns ↦ en ↦ at∉current_element"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="current_element∪{ns ↦ en ↦ at}⊆allowed_namespaces × allowed_entities × allowed_attributes"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="query_type_state=VALID">
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬ns ↦ en ↦ at∈current_element"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="current_qtype∈allowed_query_type">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="current_element⊆allowed_namespaces × allowed_entities × allowed_attributes"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="ns∈allowed_namespaces"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="current_element⊆allowed_namespaces × allowed_entities × allowed_attributes∧ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+            <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="en∈allowed_entities"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="⊤∧⊤∧⊤∧⊤"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AddElement/inv_safe;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="en0,ns0,at0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="ATTRIBUTE,DANGEROUS_FRAGMENT,ENTITY,INSTRUCTIONS,NAMESPACE,QUERY_FRAGMENT,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19,p20"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p28"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p29"/>
+                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p30"/>
+                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p31"/>
+                                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p32"/>
+                                        <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p33"/>
+                                        <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p34"/>
+                                        <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p35"/>
+                                        <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p36"/>
+                                        <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p37"/>
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees ns0,en0,at0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+                                                <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+                                                <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+                                                <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="p39">
+                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_type_state=VALID" org.eventb.core.prHyps="p9">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_element_state=PENDING" org.eventb.core.prHyps="p5">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p41" org.eventb.core.prHyps="p3,p6,p2,p10,p11,p12,p13,p17,p18,p19,p20,p21,p22,p39">
+                                                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p42">
+                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_type_state=VALID" org.eventb.core.prHyps="p9">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_element_state=PENDING" org.eventb.core.prHyps="p5">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p42" org.eventb.core.prHyps="p3,p6,p2,p10,p11,p12,p13,p17,p18,p19,p20,p21,p22,p39">
+                                                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p43">
+                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_type_state=VALID" org.eventb.core.prHyps="p9">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_element_state=PENDING" org.eventb.core.prHyps="p5">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p3,p6,p2,p10,p11,p12,p13,p17,p18,p19,p20,p21,p22,p39">
+                                                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p44">
+                                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_type_state=VALID" org.eventb.core.prHyps="p9">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+                                                                        <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_element_state=PENDING" org.eventb.core.prHyps="p5">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                                                                                <org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="p3,p6,p2,p10,p11,p12,p13,p17,p18,p19,p20,p21,p22,p39">
+                                                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+        <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+        <org.eventb.core.prIdent name="query_element_state" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="query_element_state∈STATE"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀ns0⦂NAMESPACE,en0⦂ENTITY,at0⦂ATTRIBUTE·ns0 ↦ en0 ↦ at0∈current_element∪{ns ↦ en ↦ at}⇒ns0 ↦ en0 ↦ at0∈safe_structure∧ns0∈allowed_namespaces∧en0∈allowed_entities∧at0∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="ns ↦ en ↦ at∈safe_structure"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="ns0 ↦ en0 ↦ at0∈safe_structure∧ns0∈allowed_namespaces∧en0∈allowed_entities∧at0∈allowed_attributes">
+            <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="ns ↦ en ↦ at∈query_structure"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="query_type_state=VALID"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬ns ↦ en ↦ at∈current_element"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="ns0 ↦ en0 ↦ at0∈current_element∪{ns ↦ en ↦ at}⇒ns0 ↦ en0 ↦ at0∈safe_structure∧ns0∈allowed_namespaces∧en0∈allowed_entities∧at0∈allowed_attributes">
+            <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="ns0 ↦ en0 ↦ at0∈current_element∪{ns ↦ en ↦ at}">
+            <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="ns∈allowed_namespaces"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="current_qtype∈INSTRUCTIONS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="en∈allowed_entities"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="ns ↦ en ↦ at∉current_element"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p43" org.eventb.core.predicate="en0∈allowed_entities">
+            <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="query_type_state∈STATE"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="allowed_entities⊆ENTITY"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀ns⦂NAMESPACE,en⦂ENTITY,at⦂ATTRIBUTE·ns ↦ en ↦ at∈current_element⇒ns ↦ en ↦ at∈safe_structure∧ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))"/>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="ns0 ↦ en0 ↦ at0∈safe_structure">
+            <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en0" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE"/>
+        <org.eventb.core.prPred name="p44" org.eventb.core.predicate="at0∈allowed_attributes">
+            <org.eventb.core.prIdent name="at0" org.eventb.core.type="ATTRIBUTE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="current_qtype∈allowed_query_type"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="current_segments⊆QUERY_FRAGMENT"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="query_element_state=PENDING"/>
+        <org.eventb.core.prPred name="p42" org.eventb.core.predicate="ns0∈allowed_namespaces">
+            <org.eventb.core.prIdent name="ns0" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r8" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv_elm_valid;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊥⇒(∅ ⦂ ℙ(NAMESPACE×ENTITY×ATTRIBUTE))=query_structure"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PENDING=VALID⇒(∅ ⦂ ℙ(NAMESPACE×ENTITY×ATTRIBUTE))=query_structure"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ValidateStructure/inv_elm_valid;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="VALID=VALID⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=VALID">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="query_element_state=VALID⇒current_element=query_structure">
+            <org.eventb.core.prIdent name="query_element_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬PENDING=REJECTED">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="query_element_state=VALID⇒⊤">
+            <org.eventb.core.prIdent name="query_element_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="query_type_state=VALID">
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="current_element=query_structure"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="current_qtype∈allowed_query_type">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬VALID=REJECTED">
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})">
+            <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+            <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="VALID=VALID⇒⊤"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="AddElement/inv_elm_valid;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17"/>
+                                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
+                                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p24"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p25"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p26"/>
+                                        <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p27"/>
+                                        <org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p28"/>
+                                        <org.eventb.core.prHypAction name="HIDE9" org.eventb.core.prHyps="p29"/>
+                                        <org.eventb.core.prHypAction name="HIDE10" org.eventb.core.prHyps="p30"/>
+                                        <org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p31"/>
+                                        <org.eventb.core.prHypAction name="HIDE12" org.eventb.core.prHyps="p32"/>
+                                        <org.eventb.core.prHypAction name="HIDE13" org.eventb.core.prHyps="p33"/>
+                                        <org.eventb.core.prHypAction name="HIDE14" org.eventb.core.prHyps="p34"/>
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="p35">
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p38"/>
+                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+                                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_type_state=VALID" org.eventb.core.prHyps="p3">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with query_element_state=PENDING" org.eventb.core.prHyps="p1">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p40"/>
+                                                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p35"/>
+                                                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p1"/>
+                                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'">
+                                                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p41"/>
+                                                                                        <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p41"/>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+        <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+        <org.eventb.core.prIdent name="query_element_state" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="query_element_state∈STATE"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="PENDING=VALID"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="at∈allowed_attributes">
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="ns∈allowed_namespaces∧en∈allowed_entities∧at∈allowed_attributes">
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="null_pattern∈DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="null_pattern" org.eventb.core.type="DANGEROUS_FRAGMENT"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="query_type_state=VALID"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬ns ↦ en ↦ at∈current_element"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="current_element∪{ns ↦ en ↦ at}=query_structure"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="query_type∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="query_type" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="ns∈allowed_namespaces">
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="allowed_attributes⊆ATTRIBUTE">
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="current_qtype∈INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="en∈allowed_entities">
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="allowed_query_type⊆INSTRUCTIONS">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="mapper_query_dfragment∈QUERY_FRAGMENT ↔ DANGEROUS_FRAGMENT">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="safe_structure⊆NAMESPACE × ENTITY × ATTRIBUTE">
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="query_structure⊆NAMESPACE × ENTITY × ATTRIBUTE"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="ns ↦ en ↦ at∉current_element"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="query_user∈USERS">
+            <org.eventb.core.prIdent name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+            <org.eventb.core.prIdent name="query_user" org.eventb.core.type="USERS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="query_element_state=VALID"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="query_type_state∈STATE"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="allowed_entities⊆ENTITY">
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="query_element_state=VALID⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="⊤⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="query_segment⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_segment" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="allowed_namespaces⊆NAMESPACE">
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="current_element=query_structure"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="current_qtype∈allowed_query_type">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="current_segments⊆QUERY_FRAGMENT">
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="query_element_state=VALID⇒current_element∪{ns ↦ en ↦ at}=query_structure"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="query_element_state=PENDING"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RejectedNotAllowedElement/inv_elm_valid;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬ns∈allowed_namespaces∨¬en∈allowed_entities∨¬at∈allowed_attributes">
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="query_type_state=VALID">
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="ns∉allowed_namespaces∨en∉allowed_entities∨at∉allowed_attributes">
+            <org.eventb.core.prIdent name="allowed_attributes" org.eventb.core.type="ℙ(ATTRIBUTE)"/>
+            <org.eventb.core.prIdent name="allowed_entities" org.eventb.core.type="ℙ(ENTITY)"/>
+            <org.eventb.core.prIdent name="allowed_namespaces" org.eventb.core.type="ℙ(NAMESPACE)"/>
+            <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="current_qtype∈allowed_query_type">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="REJECTED=VALID⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RejectedNotSafeElement/inv_elm_valid;/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ATTRIBUTE,ENTITY,NAMESPACE,STATE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATE,{PENDING},{VALID},{REJECTED}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="p8" org.eventb.core.prInfHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PENDING" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="REJECTED" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="VALID" org.eventb.core.type="STATE"/>
+        <org.eventb.core.prIdent name="current_element" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prIdent name="query_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(mapper_query_dfragment)∩current_segments=(∅ ⦂ ℙ(QUERY_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬PENDING=VALID"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊥⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬PENDING=REJECTED"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="query_type_state=VALID⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATE={PENDING,VALID,REJECTED}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="query_type_state=VALID">
+            <org.eventb.core.prIdent name="query_type_state" org.eventb.core.type="STATE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="ns ↦ en ↦ at∉safe_structure">
+            <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="current_qtype∈allowed_query_type">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬VALID=REJECTED"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤⇒current_qtype∈allowed_query_type∧mapper_query_dfragment[current_segments]∩DANGEROUS_FRAGMENT=(∅ ⦂ ℙ(DANGEROUS_FRAGMENT))">
+            <org.eventb.core.prIdent name="DANGEROUS_FRAGMENT" org.eventb.core.type="ℙ(DANGEROUS_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="QUERY_FRAGMENT" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="current_qtype" org.eventb.core.type="INSTRUCTIONS"/>
+            <org.eventb.core.prIdent name="current_segments" org.eventb.core.type="ℙ(QUERY_FRAGMENT)"/>
+            <org.eventb.core.prIdent name="mapper_query_dfragment" org.eventb.core.type="ℙ(QUERY_FRAGMENT×DANGEROUS_FRAGMENT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬allowed_query_type=(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬ns ↦ en ↦ at∈safe_structure">
+            <org.eventb.core.prIdent name="at" org.eventb.core.type="ATTRIBUTE"/>
+            <org.eventb.core.prIdent name="en" org.eventb.core.type="ENTITY"/>
+            <org.eventb.core.prIdent name="ns" org.eventb.core.type="NAMESPACE"/>
+            <org.eventb.core.prIdent name="safe_structure" org.eventb.core.type="ℙ(NAMESPACE×ENTITY×ATTRIBUTE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="allowed_query_type≠(∅ ⦂ ℙ(INSTRUCTIONS))">
+            <org.eventb.core.prIdent name="INSTRUCTIONS" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+            <org.eventb.core.prIdent name="allowed_query_type" org.eventb.core.type="ℙ(INSTRUCTIONS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="REJECTED=VALID⇒current_element=query_structure"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATE,{PENDING},{VALID},{REJECTED})"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

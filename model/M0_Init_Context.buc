@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1790337645414" org.eventb.texttools.text_representation="context M0_Init_Context&#10;&#10;sets&#10;&#9;STATE&#10;&#9;OPERATOR&#10;&#9;LINK_TYPE&#10;&#9;INSTRUCTIONS&#10;&#9;DANGEROUS_FRAGMENT&#10;&#10;constants PENDING VALID REJECTED&#10;&#10;axioms&#10;  @axm_state; partition(STATE, {PENDING}, {VALID}, {REJECTED})&#10;end" version="3">
+    <org.eventb.core.constant name="_CI5J0CdsEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.identifier="PENDING"/>
+    <org.eventb.core.constant name="_CI6_ACdsEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.identifier="VALID"/>
+    <org.eventb.core.constant name="_CI6_ASdsEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.identifier="REJECTED"/>
+    <org.eventb.core.carrierSet name="_j38FECdxEfGfWNIodzSCBw" org.eventb.core.generated="false" org.eventb.core.identifier="STATE"/>
+    <org.eventb.core.carrierSet name="_dqa4YT5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="OPERATOR"/>
+    <org.eventb.core.axiom name="_dqa4az5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.label="axm_state;" org.eventb.core.predicate="partition(STATE, {PENDING}, {VALID}, {REJECTED})"/>
+    <org.eventb.core.carrierSet name="_YHKQELi4EfGgI-iZukG_3Q" org.eventb.core.generated="false" org.eventb.core.identifier="LINK_TYPE"/>
+    <org.eventb.core.carrierSet name="_zV1b8z5mEfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="INSTRUCTIONS"/>
+    <org.eventb.core.carrierSet name="_NyVt8D59EfGBkNnRVg_R5Q" org.eventb.core.generated="false" org.eventb.core.identifier="DANGEROUS_FRAGMENT"/>
+</org.eventb.core.contextFile>
