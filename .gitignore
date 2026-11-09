@@ -11,6 +11,12 @@
 .settings/
 bin/
 
+# --- Exports / archives du workspace ---
+# Les sources curées vivent dans model/ ; un export complet rapatrierait les
+# fichiers dérivés ignorés plus haut.
+*.zip
+Export_Rodin_Workspace/
+
 # --- OS ---
 .DS_Store
 Thumbs.db
